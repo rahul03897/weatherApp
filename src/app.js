@@ -10,7 +10,7 @@ const e = require('express');
 console.log(__dirname, '     ' ,__filename) // Both of these values are provided by wrapper function.
 console.log(path.join(__dirname,'../public')) ;
 const app = express() // Express function;
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
  
 
 //Paths for Express handle bars
