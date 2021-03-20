@@ -10,6 +10,7 @@ const e = require('express');
 console.log(__dirname, '     ' ,__filename) // Both of these values are provided by wrapper function.
 console.log(path.join(__dirname,'../public')) ;
 const app = express() // Express function;
+const port = process.env.PORT || 3000
  
 
 //Paths for Express handle bars
@@ -130,6 +131,6 @@ app.get('*',(req,res)=>{
 })
     });
 
-app.listen(3000,()=>{
-    console.log('Server is Up on port 3000.')
+app.listen(PORT,()=>{
+    console.log('Server is Up on port '+ PORT +'.')
 });
